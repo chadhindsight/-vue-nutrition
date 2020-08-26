@@ -6,12 +6,18 @@
 </template>
 
 <script>
-import FoodBox from "./components/FoodBox.vue";
-
+import FoodBox from "./components/FoodBox";
+import food from "./food.json";
+console.log(food);
 export default {
   name: "App",
   components: {
     FoodBox,
+  },
+  data() {
+    return {
+      food,
+    };
   },
 };
 </script>
