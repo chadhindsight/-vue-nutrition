@@ -2,11 +2,7 @@
   <div class="hello">
     <h3>{{food.name}}</h3>
     <p></p>
-    <p></p>
-    <p></p>
-    <p>
-      <img v-bind:src="food.image" alt="what the food looks like" />
-    </p>
+    <img v-bind:src="food.image" alt="what the food looks like" />
   </div>
 </template>
 
