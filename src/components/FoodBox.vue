@@ -1,12 +1,18 @@
 <template>
   <div class="hello">
     <h1>Vue Nutrition</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p>
+      <img src="food.image" />
+    </p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "FoodBox",
   props: {
     msg: String,
   },

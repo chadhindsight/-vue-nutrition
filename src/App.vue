@@ -1,22 +1,23 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <FoodBox msg="Welcome to Your Vue.js App" />
+    <Foods v-bind:foods="foods" />
   </div>
 </template>
 
 <script>
-import FoodBox from "./components/FoodBox";
-import food from "./food.json";
-console.log(food);
+import Foods from "./components/Foods";
+import foods from "./food.json";
+console.log(foods);
+
 export default {
   name: "App",
   components: {
-    FoodBox,
+    Foods,
   },
   data() {
     return {
-      food,
+      foods,
     };
   },
 };
