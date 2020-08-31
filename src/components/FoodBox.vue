@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <h3>{{food.name}}</h3>
-    <p></p>
+    <p>{{food.calories}}</p>
     <img v-bind:src="food.image" alt="what the food looks like" />
   </div>
 </template>
