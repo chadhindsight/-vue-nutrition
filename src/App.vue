@@ -2,11 +2,13 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
     <Foods v-bind:foods="foods" />
+    <AddFood />
   </div>
 </template>
 
 <script>
 import Foods from "./components/Foods";
+import AddFood from "./components/AddFood";
 import foods from "./food.json";
 console.log(foods);
 
@@ -14,6 +16,7 @@ export default {
   name: "App",
   components: {
     Foods,
+    AddFood,
   },
   data() {
     return {
