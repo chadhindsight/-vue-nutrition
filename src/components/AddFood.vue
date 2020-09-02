@@ -18,7 +18,7 @@ export default {
     };
   },
   methods: {
-    addTodo() {
+    addFood() {
       const newFood = {
         name: this.name,
         calories: this.calories,
