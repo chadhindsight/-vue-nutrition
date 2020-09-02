@@ -2,6 +2,7 @@
   <div>
     <form @submit.prevent="addTodo">
       <input type="text" v-model="title" name="title" placeholder="Add Food..." />
+      <input type="text" name="image" placeholder="Add Image..." />
       <input type="submit" value="Submit" class="btn" />
     </form>
   </div>
@@ -14,6 +15,7 @@ export default {
   data() {
     return {
       name: "",
+      image: "",
       calories: 0,
     };
   },
