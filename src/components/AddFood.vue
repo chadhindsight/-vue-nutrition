@@ -23,6 +23,7 @@ export default {
     addFood() {
       const newFood = {
         name: this.name,
+        image: this.image,
         calories: this.calories,
       };
       // Send up to parent
