@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
+    <AddFood v-on:add-food="addFood" />
     <Foods v-bind:foods="foods" />
-    <AddFood />
   </div>
 </template>
 
