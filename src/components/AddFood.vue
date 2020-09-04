@@ -1,8 +1,8 @@
 <template>
   <div>
-    <form @submit.prevent="addTodo">
-      <input type="text" v-model="title" name="title" placeholder="Add Food..." />
-      <input type="text" name="image" placeholder="Add Image..." />
+    <form @submit.prevent="addFood">
+      <input type="text" v-model="name" name="name" placeholder="Add Food..." />
+      <input type="text" v-model="image" name="image" placeholder="Add Image..." />
       <input type="submit" value="Submit" class="btn" />
     </form>
   </div>
@@ -28,7 +28,8 @@ export default {
       };
       // Send up to parent
       this.$emit("add-food", newFood);
-      this.title = "";
+      this.name = "";
+      this.image = "";
     },
   },
 };
