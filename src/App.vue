@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img alt="The logo" src="./assets/logo.png" />
     <AddFood v-on:add-food="addFood" />
     <Foods v-bind:foods="foods" />
   </div>
@@ -22,6 +22,11 @@ export default {
     return {
       foods,
     };
+  },
+  methods: {
+    addFood(newFood) {
+      this.foods = [...this.foods, newFood];
+    },
   },
 };
 </script>
