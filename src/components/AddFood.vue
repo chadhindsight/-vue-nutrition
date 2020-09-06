@@ -25,7 +25,7 @@ export default {
         image: this.image,
         calories: this.calories,
       };
-      // Send up to parent
+      // Send up to parent!
       this.$emit("add-food", newFood);
       this.name = "";
       this.image = "";
