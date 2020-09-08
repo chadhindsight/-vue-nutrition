@@ -40,7 +40,7 @@ form {
 }
 input[type="text"] {
   flex: 10;
-  padding: 2rem;
+  padding: 3rem;
 }
 input[type="submit"] {
   flex: 2;
