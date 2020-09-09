@@ -3,7 +3,7 @@
     <b-card>
       <h3>{{food.name}}</h3>
       <p>{{food.calories}}</p>
-      <button>+</button>
+      <b-button variant="primary">+</b-button>
       <img v-bind:src="food.image" alt="what the food looks like" />
     </b-card>
   </div>
