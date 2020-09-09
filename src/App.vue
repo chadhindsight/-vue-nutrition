@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <img alt="The logo" src="./assets/logo.png" />
+    <b-jumbotron>
+      <img alt="The logo" class="head-pic" src="./assets/logo.png" />
+    </b-jumbotron>
     <AddFood v-on:add-food="addFood" />
     <Foods v-bind:foods="foods" />
   </div>
@@ -39,5 +41,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.head-pic {
+  height: 80%;
+  width: 95%;
 }
 </style>

@@ -3,8 +3,8 @@
     <b-card>
       <h3>{{food.name}}</h3>
       <p>{{food.calories}}</p>
-      <b-button variant="primary">+</b-button>
-      <img v-bind:src="food.image" alt="what the food looks like" />
+      <b-button>+</b-button>
+      <img id="comida" v-bind:src="food.image" alt="what the food looks like" />
     </b-card>
   </div>
 </template>
@@ -25,9 +25,9 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+#comida {
+  height: 2rem;
+  width: 2rem;
 }
 a {
   color: #42b983;
